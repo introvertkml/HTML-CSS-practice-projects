@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PROFILE CARD | KAMAL MOURYA</title>
+    <link rel="icon" href="profile.jpg">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
 
     <!-- boxicon css -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 
     <style>
         *{
@@ -22,26 +29,32 @@
 
             display: grid;
             place-items: center;
+            font-family: "Smooch Sans", sans-serif;
         }
 
+        /* profile container */
+
         .profile_container{
-            height: 500px;
+            padding: 30px;
             width: 400px;
             background-color: beige;
             border-radius: 25px;
 
             display: grid;
             place-items: center;
-            box-shadow: 0 0 60px 10px gray;
+            box-shadow: 0 0 100px 20px gray;
         }
+
+        /* image container */
 
         .profile_image{
             position: relative;
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-color: blue;
+            background-color: burlywood;
             padding: 3px;
+            margin-top: 30px;
         }
 
         .profile_image .image{
@@ -51,13 +64,125 @@
             border-radius: 50%;
             border: 3px solid white;
         }
+
+        /* profle text data */
+
+        .text{
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: 4px;
+            padding: 15px; 
+        }
+
+        p{
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* social media links */
+
+        .links{
+            list-style-type: none;
+            display: flex;
+        }
+
+        .links1{
+            font-size: 40px;
+            padding: 15px;
+        }
+
+        .bxl{
+            color: black;
+        }
+
+        /* buttons */
+        .btn{
+            text-transform: capitalize;
+            background-color: burlywood;
+            font-family: "Smooch Sans", sans-serif;
+            font-weight: bold;
+            padding :15px 20px;
+            letter-spacing: 3px;
+            border-radius: 30px;
+
+        }
+
+        .btn:hover{
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .btn1{
+            list-style-type: none;
+            display: flex;
+        }
+
+        .btn2{
+            font-size: 40px;
+            padding: 15px;
+        }
+
+        /* like share comment */
+        section{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 25px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        span{
+            padding: 5px;
+        }
+
+        .bx{
+            padding: 0 10px;
+        }
+
+        
+
     </style>
 </head>
 <body>
     <div class="profile_container">
+
+        <!-- image container -->
         <div class="profile_image">
             <img src="profile.jpg" alt="" class="image">
         </div>
+
+        <!-- text container -->
+        <div class="text">
+            <h1>coding rookie</h1>
+            <p>kamal mourya</p>
+        </div>
+
+        <!-- social media links-->
+        <div class="social-media">
+            <ul class="links">
+                <li class="links1"><a href="#"><i class='bxl  bx-github'></i></a></li>
+                <li class="links1"><a href="#"><i class='bxl  bx-instagram'></i></a></li>
+                <li class="links1"><a href="#"><i class='bxl  bx-facebook-circle'></i></a></li>
+                <li class="links1"><a href="#"><i class='bxl  bx-whatsapp'></i></a></li>
+            </ul>
+        </div>
+
+        <!-- buttons -->
+        <div class="button">
+            <ul class="btn1">
+                <li class="btn2"><a href="#"><button class="btn subscribe">subscribe</button></a></li>
+                <li class="btn2"><a href="#"><button class="btn message">message</button></a></li>
+            </ul>
+        </div>
+        
+        <!-- like share comment -->
+        <section class="other-buttons">
+            <div class="data heart"><i class='bx  bx-heart'  ><span>90k</span></i></div>
+            <div class="data comment"><i class='bx  bx-message-circle'><span>30k</span></i></div>
+            <div class="data share" ><i class='bx  bx-share'><span clsss="n">46k</span></i></div>   
+        </section>
+        
     </div>
 </body>
 </html>
